@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript BOM Object</title>
+
+
+
+	<style>
+		#myId{
+			width: 300px;
+			height: 300px;
+			background: linear-gradient(to right,yellow,green);
+		}
+
+	</style>
+</head>
+<body>
+
+
+
+
+
+	<!-- <button onclick="f1()">click me</button> -->
+	<script>
+		// function f1(){
+		// 	alert('hello world');
+		// }
+		// f1();
+
+
+		// function f1()
+		// {
+		// 	alert('welcome to JavaScript');
+		// }
+
+
+		// function f1()
+		// {
+		// 	var v=confirm('Do You Want to delete?')
+		// 	if(v==true)
+		// 	{
+		// 		alert('Deleted Successfully');
+		// 	}
+		// 	else
+		// 	{
+		// 		alert('cancelled please try again!!!!');
+		// 	}
+		// }
+
+
+		// function f1()
+		// {
+		// 	var name=prompt('who are you?');
+		// 	alert('welcome :' +name);
+		// }
+
+
+		// function f1(){
+		// 	var w=window.innerWidth;
+		// 	var h=window.innerHeight;
+
+		// 	document.writeln("Width :"+w+"<br>");
+		// 	document.writeln("Height :"+h+"<br>");
+		// }
+		// f1();
+
+
+
+
+		// var myWindow;
+
+		// function openWindow(){
+		// 	myWindow=window.open("http:google.com","","width=200px,height=200px");
+		// }
+		// function closeWindow(){
+		// 	myWindow.close();
+		// }
+
+
+				// var myWindow;
+				// function openWindow()
+				// {
+				// 	 myWindow=window.open("","_blank","width=300px,height=300px");
+
+					
+				// }
+				// function moveWindow()
+				// {
+				// 	myWindow.moveTo(100,100);
+				// }
+
+		// var myWindow;
+
+		// function openWindow(){
+		// 	myWindow=window.open("","_blank","width=300px,height=300px");
+
+		// }
+		// function movWindow(){
+		// 	myWindow.moveTo(100,100);
+		// }
+
+		// function setTimeOut()
+		// {
+		// 	// setTimeout(function f1(){
+		// 	// 	alert('Welcome to JavaScript');
+		// 	// },4000);
+
+		// 	setTimeout(function f1()
+		// 						{
+		// 						alert("Hello World")
+		// 						},4000);
+		// }
+
+
+		// var id;
+		// function setTimeOut(){
+		// 	id=setTimeout(Anim,4000)
+		// }
+		// function Anim(){
+		// 	alert('yahoo!!!!!')
+		// }
+		// function clearTimeOut(){
+		// 	clearTimeout(id);
+		// }
+
+
+		// function f1()
+		// {
+		// 	var a=0
+		// 	var id=setInterval(Anim,1000);
+
+		// 	function Anim(){
+
+
+		// 		a= a + 10;
+
+		// 		if(a==100)
+		// 		{
+		// 			clearInterval(id);
+		// 		}
+
+		// 		var target=document.getElementById('myId');
+		// 		target.style.marginLeft= a + 'px';
+
+		// 	}
+
+
+		// }
+		// f1();
+
+
+		localStorage.setItem("firstName","Vijay");
+		localStorage.setItem("lastName","Natte");
+
+		document.writeln(localStorage.getItem("firstName")+"<br>");
+		document.writeln(localStorage.getItem("lastName")+"<br>");
+
+		localStorage.removeItem("lastName");
+		document.writeln(localStorage.getItem("firstName")+"<br>");
+		document.writeln(localStorage.getItem("lastName")+"<br>");
+
+		localStorage.clear();
+
+		document.writeln(localStorage.getItem("firstName")+"<br>");
+		document.writeln(localStorage.getItem("lastName")+"<br>");
+
+		
+
+
+
+	</script>
+
+
+	<!-- <div id=myId></div> -->
+<!-- 
+	<button onclick="setTimeOut()">set time out</button>	
+	<button onclick="clearTimeOut()">clear time out</button> -->
+
+<!-- 
+	<button onclick="openWindow()">open window</button>
+	<button onclick="movWindow()">Move the window</button> -->
+	<!-- <button onclick="openWindow()">Open Window</button> -->
+	<!-- <button onclick="closeWindow()">close Window</button> -->
+
+
+	<!-- <button onclick="openWindow()">open a new window</button>
+	<button onclick="moveWindow()">move window</button> -->
+</body>
+</html>
